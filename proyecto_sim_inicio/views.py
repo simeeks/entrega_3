@@ -16,7 +16,7 @@ def saludo(request, nombre, apellido):
 
 def mi_template(request):
     
-    archivo = open(r'C:\Datos\CODERHOUSE\entrega_3\templates\mi_template.html')
+    archivo = open(r'C:\Datos\CODERHOUSE\entrega_3\proyecto_sim_inicio\templates\proyecto_sim_inicio\mi_template.html')
     
     template = Template(archivo.read())
     
@@ -29,7 +29,7 @@ def mi_template(request):
     return HttpResponse(template_renderizado)
 
 def prueba_render(request):
-    return render(request, r'C:\Datos\CODERHOUSE\entrega_3\templates\prueba_render.html')
+    return render(request, r'C:\Datos\CODERHOUSE\entrega_3\proyecto_sim_inicio\templates\proyecto_sim_inicio\prueba_render.html')
 
 def mi_vista(request):
     return render(request, 'proyecto_sim_inicio/index.html')
