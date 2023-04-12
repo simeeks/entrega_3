@@ -31,5 +31,8 @@ def mi_template(request):
 def prueba_render(request):
     return render(request, r'C:\Datos\CODERHOUSE\entrega_3\templates\prueba_render.html')
 
+def mi_vista(request):
+    return render(request, 'proyecto_sim_inicio/index.html')
+
 def index(request):
     return render(request, r'C:\Datos\CODERHOUSE\entrega_3\proyecto_sim_inicio\templates\proyecto_sim_inicio\index.html')
